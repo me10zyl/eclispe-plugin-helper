@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="PluginHelper.contribution1"
+            objectClass="java.lang.Object"
+            >
+         <menu
+               label="Alert Object"
+               path="additions"
+               id="PluginHelper.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Alert Object"
+               class="pluginhelper.popup.actions.AlertObjectAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="PluginHelper.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
